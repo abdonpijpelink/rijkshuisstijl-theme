@@ -1,0 +1,17 @@
+.aui .dockbar-split .dockbar .navbar-inner 
+{
+	.nav-account-controls
+	{
+		background-color: #555;
+	}
+	
+	.nav-add-controls > li 
+	{
+		background-color: transparent;
+	}
+	
+	.user-avatar-image
+	{
+		max-height: $logo-height - 20px;
+	}
+}

@@ -1,0 +1,101 @@
+.aui #navigation
+{
+	font-family: Arial, 'Helvetica Neue', Helvetica, Univers, sans-serif;
+	margin-top: 10px;
+	
+	ul.top-level-menu
+	{
+		padding: 20px 20px 0 20px;
+		list-style: none;
+		margin: 0;
+		
+		li
+		{
+			display: inline-block;
+			padding: 5px 10px;
+			
+			a
+			{
+				font-weight: bold;
+			}
+		}
+	}
+	
+	ul.breadcrumb
+	{
+		background-color: inherit;
+		padding: 15px 20px 0 20px;
+		margin: 0;
+		font-family: Verdana, Geneva, sans-serif;
+	
+		li
+		{
+			text-shadow: none;
+			
+			a
+			{
+				font-size: 11px;
+					
+				&:visited
+				{
+					color: $tekst-links;
+				}
+			}
+		}
+	}
+	
+	h1.page-title
+	{
+		font-size: 22px;
+		line-height: 22px;
+		padding: 5px 20px;
+		font-weight: normal;
+	}
+	
+	ul.child-menu
+	{
+		padding: 0 20px;
+		list-style: none;
+		margin: 0;
+		
+		li
+		{
+			display: inline-block;
+			padding: 5px 10px;
+			
+			a
+			{
+				color: $tekst-links; 
+				font-size: 15px;
+			}
+		}
+		
+		li.selected
+		{
+			background-color: white;
+			
+			a
+			{
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+@include respond-to(tablet, phone)
+{
+	.aui #navigation ul
+	{
+		display: none;
+		
+		li
+		{
+			display: block !important;
+		}
+	}
+	
+	.aui #navigation.open ul
+	{
+		display: block;
+	}
+}

@@ -1,0 +1,31 @@
+@import "compass";
+@import "mixins";
+
+/* Workarounds */
+
+.portlet-borderless-bar
+{
+	.btn-group, .btn-group.open 
+	{
+		.dropdown-toggle 
+		{
+			background-image: url(../images/portlet/options_borderless.png) !important;
+		}
+	}
+}
+
+.portlet-column-content > .alert-error
+{
+	display: none;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner
+{
+	width: 100%;
+	min-height: 0;
+	background: none;
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}

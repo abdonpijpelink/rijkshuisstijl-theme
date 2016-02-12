@@ -1,0 +1,59 @@
+@import "compass";
+@import "mixins"; 
+
+.aui body
+{
+	font-family: Verdana, Geneva, sans-serif;
+	color: black;
+	font-size: 12px;
+	padding: 0 !important;
+	background-color: $achtergrond;
+	border-top: 3px solid #4e4e4e;
+	
+	h1, h2, h3, h4, h5, h6
+	{
+		font-family: Arial, 'Helvetica Neue', Helvetica, Univers, sans-serif;
+	}
+	
+	h1, h2
+	{
+		font-size: 15px;
+		line-height: 15px;
+	}
+	
+	h3, h4, h4, h6
+	{
+		font-size: 12px;
+		line-height: 12px;
+	}
+	
+	a
+	{
+		color: $tekst-links;
+		
+		&:visited
+		{
+			color: $links-visited;
+		}
+	}
+	
+	#wrapper
+	{
+		padding-top: 0;
+		width: $page-width;
+		margin: 0 auto;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		background-color: white;
+		
+		@include respond-to(tablet, phone)
+		{
+			width: $mobile-page-width;
+		}
+	}
+	
+	#wrapper
+	{
+		background: white url(../images/content-gradient.png) repeat-y 180px top;
+	}
+}

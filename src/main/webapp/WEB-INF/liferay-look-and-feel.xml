@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.2.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_6_2_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>6.2.0+</version>
+	</compatibility>
+	<theme id="rijkshuisstijl" name="Rijkshuisstijl">
+		<template-extension>ftl</template-extension>
+		<settings>
+			<setting configurable="true" type="text" key="portlet-setup-show-borders-default" value="false" />
+			<setting configurable="true" type="text" key="volle-kleur" value="#01689b">
+				<![CDATA[
+ 					AUI().ready('node',function(A) {
+	 					A.one("#[@NAMESPACE@]volle-kleur").setAttribute("type", "color");    
+	 					A.one("#[@NAMESPACE@]volle-kleur").setAttribute("style", "height: 35px;");    
+					});
+				]]>
+			</setting>
+			<setting configurable="true" type="text" key="lichte-tint" value="#cce0f1">
+				<![CDATA[
+ 					AUI().ready('node',function(A) {
+	 					A.one("#[@NAMESPACE@]lichte-tint").setAttribute("type", "color");    
+	 					A.one("#[@NAMESPACE@]lichte-tint").setAttribute("style", "height: 35px;");    
+					});
+				]]>
+			</setting>
+			<setting configurable="true" type="text" key="lichtste-tint" value="#e5f0f9">
+				<![CDATA[
+ 					AUI().ready('node',function(A) {
+	 					A.one("#[@NAMESPACE@]lichtste-tint").setAttribute("type", "color");    
+	 					A.one("#[@NAMESPACE@]lichtste-tint").setAttribute("style", "height: 35px;");    
+					});
+				]]>
+			</setting>
+		</settings>
+	</theme>
+</look-and-feel>
